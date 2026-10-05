@@ -3,6 +3,7 @@ modified: 2026-10-05T23:24:55+03:00
 created: 2026-10-05T20:01:55+03:00
 ---
 Уникальный шифр студента: `372316`
+
 <img width="320" height="207" alt="image" src="https://github.com/user-attachments/assets/8e3e20c9-c91b-4f3d-92a2-c4155a56054d" />
 
 
