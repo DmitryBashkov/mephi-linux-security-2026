@@ -1,0 +1,16 @@
+/home/dmitry/homework-1/cat
+/usr/bin/chage
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/bin/grub2-set-bootflag
+/usr/bin/mount
+/usr/bin/newgrp
+/usr/bin/pam_timestamp_check
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/su
+/usr/bin/sudo
+/usr/bin/umount
+/usr/bin/unix_chkpwd
+/usr/lib/polkit-1/polkit-agent-helper-1

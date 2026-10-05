@@ -1,0 +1,130 @@
+    1  ls -l
+    2  whereami
+    3  pwd
+    4  cd dmitry
+    5  ls -la
+    6  cd ..
+    7  id
+    8  cd ~
+    9  vim /root/.zshrc
+   10  dnf install vim
+   11  vim /root/.zshrc
+   12  cat history
+   13  history
+   14  useradd --help
+   15  useradd -u 1234 -g students user1
+   16  groupadd --help
+   17  groupadd students
+   18  useradd -u 1234 -G students user1
+   19  ls -l /home
+   20  id user1
+   21  chage --help
+   22  chage -M 90
+   23  chage -M 90 user1
+   24  chage -l user1
+   25  find --help
+   26  find / perm -4000 -type f
+   27  find / -perm -4000 -type f
+   28  find / -perm -4000 -type f 2>/dev/null
+   29  ps
+   30  ps -a
+   31  ps -ax
+   32  ps --help
+   33  ps -help simple
+   34  ps -help list
+   35  man ps
+   36  awk
+   37  ps -o pid
+   38  ps -o uid
+   39  ps -o euid
+   40  ps -xo euid
+   41  ps -axo pid, ruid
+   42  ps -ax -o pid, ruid
+   43  ps -ao pid, ruid
+   44  ps ax pid, ruid
+   45  ps ax
+   46  ps ax -o pid
+   47  ps ax -o pid, user
+   48  ps ax -o pid,user
+   49  ps ax -o pid,ruid,euid,cmd
+   50  ps ax -o pid,ruid,euid,cmd | awk '$2>=1000 & $3=0'
+   51  ps ax -o pid,ruid,euid,cmd | awk '$2>=1000 && $3=0'
+   52  ps ax -o pid,ruid,euid,cmd | awk '$2=1000 && $3=0'
+   53  ps ax -o pid,ruid,euid,cmd | awk '$2>=1000'
+   54  ps ax -o pid,ruid,euid,cmd | awk '$2>=1000 && $3==0'
+   55  ps ax -o pid,ruid,euid,cmd | awk '$2>=1000 && $3==0' > proc-euid.out
+   56  cat proc-euid.out
+   57  mkdir homework-1
+   58  mv proc-euid.out homework-1/
+   59  ls -l
+   60  ls -l homework-1
+   61  cd homework-1
+   62  whereis chage
+   63  cp /usr/bin/chage /home/dmitry/homework-1
+   64  rm chage
+   65  cp /usr/bin/cat .
+   66  ls -l
+   67  id ./cat
+   68  stat ./cat
+   69  chmod 4755 ./cat 
+   70  stat ./cat
+   71  su dmitry
+   72  history
+   73  whereis chown
+   74  cp /usr/bin/chown
+   75  cp /usr/bin/chown ./
+   76  man capabilities
+   77  man 7 capabilities
+   78  man 7 caps
+   79  man caps
+   80  man cap
+   81  man setcap
+   82  man capabilities
+   83  man setcap
+   84  man capabilities
+   85  man 7 capabilities
+   86  man 7 
+   87  man -aw capabilities
+   88  man -aw capability.conf
+   89  dnf install man-pages
+   90  man capabilities
+   91  man capabilities | grep chown
+   92  man capabilities | grep own
+   93  man capabilities | grep cap_own
+   94  man 7 capabilities
+   95  man 7 capabilities | chown
+   96  man 7 capabilities | grep chown
+   97  man 7 capabilities
+   98  man 7 capabilities | grep CAP_CHOWN
+   99  touch test.file
+  100  ls -l
+  101  ls -la
+  102  setcap cap_chown+es ./chown 
+  103  setcap cap_chown+ep ./chown 
+  104  stat ./chown
+  105  getcap ./chown
+  106  ls -l
+  107  su dmitry
+  108  vim /root/.zshrc
+  109  printenv
+  110  visudo
+  111  su user1
+  112  timedatectl set-ntp false
+  113  su user1
+  114  passwd user1 
+  115  su user1
+  116  visudo
+  117  su user1
+  118  date
+  119  visudo << 'dmitry ALL=(root) /usr/bin/timedatectl'
+  120  visudo
+  121  echo 'dmitry ALL=(root) /usr/bin/timedatectl' >> /etc/sudoers.tmp
+  122  visudo
+  123  echo 'dmitry ALL=(root) /usr/bin/timedatectl' >> visudo
+  124  visudo
+  125  echo 'dmitry ALL=(root) /usr/bin/timedatectl' >> /etc/sudoers
+  126  visudo
+  127  timedatectl set-ntp true
+  128  date
+  129  echo `372316`
+  130  echo 372316
